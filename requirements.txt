@@ -3,3 +3,9 @@ numpy
 opencv-python-headless
 ezdxf
 svg.path
+trimesh
+shapely
+mapbox-earcut
+scipy
+lxml
+networkx

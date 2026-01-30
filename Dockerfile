@@ -1,12 +1,15 @@
 FROM python:3.10-slim
 
 # Install system dependencies
-# We install 'potrace' (the CLI tool) directly now
+# Added libxml2-dev and libxslt-dev for lxml support
 RUN apt-get update && apt-get install -y \
     potrace \
     ffmpeg \
     libsm6 \
     libxext6 \
+    build-essential \
+    libxml2-dev \
+    libxslt-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
