@@ -1,6 +1,6 @@
 services:
   vectorizer:
-    image: viletheterrible/logo-veectorizer:latest
+    image: viletheterrible/the-vectorizer:latest
     container_name: TheVectorizer
     restart: unless-stopped
     network_mode: bridge
